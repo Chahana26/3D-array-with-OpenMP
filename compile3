@@ -1,0 +1,5 @@
+gfortran -c -fPIC hello3.f90 -o hello3.o
+gfortran -c -fPIC wrap3.f90 -o wrap3.o
+ar -rcs libmularray.a wrap3.o hello3.o
+python build3.py
+python execute3.py
